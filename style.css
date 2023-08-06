@@ -358,13 +358,19 @@ custom CSS
 
 .container {
     height: 100%;
-    width: 700px;
+    width: 710px;
     margin: 0 auto;
 }
 
 section {
     margin-top: 10px;
     border: 1px solid #e1e1e1;
+}
+
+section p {
+    margin: 10px auto;
+    text-align: left;
+    width: 95%;
 }
 
 h2 {
