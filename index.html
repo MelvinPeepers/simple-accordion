@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Simple Accordion</title>
+</head>
+<body>
+    <div class="container">
+
+        <section class="top-accordion">
+            <h2>Super simple Accordion</h2>
+            <div class="accordion-hidden">
+                <p>A simple and customizable accordion component made with functionalities provided by angular without having to use any 3rd party libraries. Ideal when you want custom basic accordion.</p>
+            </div>
+        </section> <!-- end of top-accordion-->
+        
+        <section class="custom-header">
+            <h2>Custom Header (with custom toggle button)</h2>
+            <button>Toggle</button>
+            <div class="accordion-hidden">
+                <p>This is a <span class="bold-section">complete custom header</span> implementation. The whole section can be customized to your liking. Toggle method will be exposed which can be used to open/close the section.</p>
+            </div>
+        </section> <!-- end of custom-header-->
+
+        <section class="bottom-accordion">
+            <h2>Custom Title</h2>
+            <div class="accordion-hidden">
+                <p>This is a simple implementation where the <span class="bold-section">title part is custom</span>. The header design and the button remains the same. This is best when you have a make small changes to title.</p>
+            </div>
+            <div>
+                <p>Disabled</p>
+            </div>
+
+        </section><!-- end of bottom-accordion-->
+
+        <section class="mode">
+            <h2>Mode: <span class="bold-section">Collapsing Mode</span></h2>
+            <p>In collapsing mode, only one section can be open at once. While toggling previous one would become hidden</p>
+            <button>Change Mode</button>
+
+        </section><!-- end of mode-->
+
+    </div>
+</body>
+</html>
