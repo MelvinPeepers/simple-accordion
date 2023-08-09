@@ -9,47 +9,50 @@
 <body>
     <div class="container">
 
-        <section class="top-accordion">
-            <h2>Super simple Accordion</h2>
-            <img src="/assets/img/down.png" class="down-arrow-icon" alt="drop-down arrow" />
-            <img src="/assets/img/arrow-up.png" class="down-arrow-icon" alt="drop-down arrow" />
-            <div class="accordion-hidden">
-                <p>A simple and customizable accordion component made with functionalities provided by angular without having to use any 3rd party libraries. Ideal when you want custom basic accordion.</p>
-            </div>
-        </section> <!-- end of top-accordion-->
+        <ul class="accordion">
+            <li>
+                <label for="super-simple">Super simple Accordion <span>&#94;</span></label>
+                <input type="radio" name="accordion" id="super-simple" checked>
+                <div class="accordion-content">
+                    <p>A simple and customizable accordion component made with functionalities provided by angular without having to use any 3rd party libraries. Ideal when you want custom basic accordion.</p>
+                </div>
+            </li>
+        </ul> <!-- end of accordion-->
         
-        <section class="custom-header">
-            <h2>Custom Header (with custom toggle button)</h2>
-            <button class="toggle-btn" type="button">Toggle</button>
-            <div class="accordion-hidden">
-                <p>This is a <span class="bold-section">complete custom header</span> implementation. The whole section can be customized to your liking. Toggle method will be exposed which can be used to open/close the section.</p>
-            </div>
-        </section> <!-- end of custom-header-->
+        <ul class="accordion">
+            <li>
+                <label for="custom-header">Custom Header (with custom toggle button) <button class="toggle-btn" type="button">Toggle</button></label>
+                <input type="radio" name="accordion" id="custom-header">
+            
+                <div class="accordion-hidden">
+                    <p>This is a <span class="bold-section">complete custom header</span> implementation. The whole section can be customized to your liking. Toggle method will be exposed which can be used to open/close the section.</p>
+                </div>
+            </li>
+        </ul> <!-- end of custom-header-->
 
-        <section class="bottom-accordion">
-            <h2>Custom Title</h2>
-            <img src="/assets/img/down.png" class="down-arrow-icon" alt="drop-down arrow" />
-            <img src="/assets/img/arrow-up.png" class="down-arrow-icon" alt="drop-down arrow" />
-            <div class="accordion-hidden">
-                <p>This is a simple implementation where the <span class="bold-section">title part is custom</span>. The header design and the button remains the same. This is best when you have a make small changes to title.</p>
-            </div>
-            <div>
-                <p>Disabled</p>
-            </div>
+            <ul class="accordion">
+                <li>
+                    <label for="custom-title">Custom Title <span>&#94;</span></label>
+                    <input type="radio" name="accordion" id="custom-title">
+                    <div class="accordion-content">
+                        <p>This is a simple implementation where the <span class="bold-section">title part is custom</span>. The header design and the button remains the same. This is best when you have a make small changes to title.</>
+                    </div>
+                    <di class="disable-txt">
+                        <p>Disabled</p>
+                    </di>
+                </li>
+            </ul> <!-- end of accordion-->
+           
 
         </section><!-- end of bottom-accordion-->
 
-        <section class="mode">
-            <h2>Mode: <span class="bold-section">Collapsing Mode</span></h2>
+        <ul class="accordion">
+            <li>Mode: <span class="bold-section">Collapsing Mode</span>
             <p>In collapsing mode, only one section can be open at once. While toggling previous one would become hidden</p>
             <button class="toggle-btn" type="button">Change Mode</button>
+            </li>
 
-        </section><!-- end of mode-->
-
-        <footer>
-            <a href="https://www.flaticon.com/free-icons/down-arrow" title="down arrow icons">Down arrow icons created by Arkinasi - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/swipe-up" title="swipe up icons">Swipe up icons created by artfath - Flaticon</a>
-        </footer>
+        </ul><!-- end of mode-->
 
     </div>
     
