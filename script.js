@@ -1,7 +1,7 @@
-remove check (remove the attribute)
+// remove check (remove the attribute)
 
-that will fix the collapse
+// that will fix the collapse
 
-use the CSS transfer to switch it again
+// use the CSS transfer to switch it again
 
-if input is checked, remove the rotation 
+// if input is checked, remove the rotation 

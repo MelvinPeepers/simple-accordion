@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Simple Accordion</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="container">
+        <div class="background">
+            <ul class="accordion top-accordion">
+                <li>
+                    <label for="super-simple">Super simple Accordion <span class="rotate-check">&#94;</span></label>
+                    <input type="radio" name="accordion" id="super-simple" checked>
+                    <div class="accordion-content">
+                        <p>A simple and customizable accordion component made with functionalities provided by angular without having to use any 3rd party libraries. Ideal when you want custom basic accordion.</p>
+                    </div>
+                </li>
+            </ul> <!-- end of accordion-->
+            
+            <ul class="accordion">
+                <li>
+                    <label id="purple-bg" for="custom-header">Custom Header (with custom toggle button) <div class="toggle-btn" type="button">Toggle</div></label>
+                    <input type="radio" name="accordion" id="custom-header" id="purple-bg">
+                
+                    <div class="accordion-content accordion-custom-header">
+                        <p>This is a <span class="bold-section">complete custom header</span> implementation. The whole section can be customized to your liking. Toggle method will be exposed which can be used to open/close the section.</p>
+                    </div>
+                </li>
+            </ul> <!-- end of custom-header-->
+    
+                <ul class="accordion custom-title-section">
+                    <li>
+                        <label for="custom-title">Custom Title <span>&#94;</span></label>
+                        <input type="radio" name="accordion" id="custom-title">
+                        <div class="accordion-content">
+                            <p>This is a simple implementation where the <span class="bold-section">title part is custom</span>. The header design and the button remains the same. This is best when you have a make small changes to title.</>
+                        </div>
+                        <div class="disable-txt">
+                            <p>Disabled</p>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+
+        <section>
+            <ul class="mode-section">
+                <li class="mode-line">Mode: <span class="bold-section">Collapsing Mode</span>
+                <p>In collapsing mode, only one section can be open at once. While toggling previous one would become hidden</p>
+                <button class="toggle-btn" type="button">Change Mode</button>
+                </li>
+            </ul>
+        </section>
+        
+    </div>
+    
+</body>
+</html>
